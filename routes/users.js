@@ -117,9 +117,9 @@ app.get('/verificar', auth, async (req, res) => {
 })
 
 app.put('/actualizar', auth, async (req, res) => {
-	const { nombre, email } = req.body
+	const { username, email } = req.body
 	try {
-		const actualizacionUsuario = await Usuario.findByIdAndUpdate(req.user.id, { nombre, email }, { new: true })
+		const actualizacionUsuario = await Usuario.findByIdAndUpdate(req.user.id, { username, email }, { new: true })
 		res.json(actualizacionUsuario)
 	} catch (error) {
 		res.status(500).json({
