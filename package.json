@@ -1,5 +1,5 @@
 {
-  "name": "semana-20.2",
+  "name": "backend-gastos-c10",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,16 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robin0311/backend-gastos-c10.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robin0311/backend-gastos-c10/issues"
+  },
+  "homepage": "https://github.com/Robin0311/backend-gastos-c10#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
@@ -16,6 +24,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.8.3"
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
   }
 }
